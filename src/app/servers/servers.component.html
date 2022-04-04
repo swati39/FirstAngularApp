@@ -41,10 +41,10 @@
     lorem ispum magna aliquet lore mauris. Cum sociis natoque penatibus et magn
   </p>
   <div
-    *ngFor="let logItem of log"
+    *ngFor="let logItem of log; let i = index"
     [ngStyle]="{
-      backgroundColor: logItem >= 5 ? 'purple' : 'transparent',
-      color: logItem >= 5 ? 'white' : 'black'
+      backgroundColor: i >= 4 ? 'purple' : 'transparent',
+      color: i >= 4 ? 'white' : 'black'
     }"
   >
     {{ logItem }}
