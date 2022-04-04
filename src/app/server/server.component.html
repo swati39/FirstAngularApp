@@ -1,1 +1,7 @@
-<p>The App Server Component</p>
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'Online' }"
+>
+  {{ "Server" }} is up on {{ serverId }} and its current status is :
+  {{ serverStatus }}.
+</p>
